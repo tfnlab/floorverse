@@ -24,8 +24,8 @@
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" >
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"  crossorigin="anonymous" ></script>
+<link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" >
+<script src="js/all.min.js"  crossorigin="anonymous" ></script>
 
 </head>
 <body>
