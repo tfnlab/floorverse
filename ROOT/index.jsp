@@ -91,7 +91,7 @@
 
     // Validate form data
     if (meme_text != null && meme_text.trim().length() > 0) {
-      meme_text += " sujbect " + request.getParameter("popular_meme_subjects") ;
+      meme_text += " " + request.getParameter("popular_meme_subjects") ;
       try{
            Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/meme.py", "'" + meme_text + "'", uuid).start();
            String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
