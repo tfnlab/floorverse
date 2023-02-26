@@ -23,8 +23,9 @@
 <meta name="twitter:title" content="Meme Genesis">
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-QDyzp00Ntf63dtIvF0JZV8ipFtS5z5S5v5u5zVJGH4+u4Dm3qfZuO7Z2uhMxneILJqEd3+Mfz7wF2RZZbRcaVg==" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-MnX9j+HihpKIK6oDTPs99vgNDN/Az+W6g/1hbM83h2/02YohpfAvIT/3rPcOJ3qzE1DCw/bQ2R/QG+nSOa46Fg==" crossorigin="
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"  crossorigin="
 
 </head>
 <body>
