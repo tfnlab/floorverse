@@ -41,7 +41,7 @@
 
 
   </div>
-
+  <% String meme_id = request.getParameter("meme_id"); %>
   <div class="container mt-5">
   <h4>The Art of Meme</h4>
   <HR>
