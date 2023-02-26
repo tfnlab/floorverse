@@ -24,8 +24,6 @@
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
 </head>
 <body>
   <div class="container mt-5">
@@ -58,7 +56,7 @@
         <HR>
         <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <HR>
-          <i class="bx bxl-twitter"></i> 
+          Tweet
         </a>
 
       </div>
