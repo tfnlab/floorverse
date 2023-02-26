@@ -119,8 +119,9 @@
     <HR>
       <% if (meme_text != null && meme_text.trim().length() > 0) {%>
     <!--<small><%=ocrDescription%></small>-->
-          <HR>
+          <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
     <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+              </a>
       <% } %>
     <HR>
     The Total Number of Memes Created stands at <%=files.length%>
