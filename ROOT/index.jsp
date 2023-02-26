@@ -26,7 +26,7 @@
         String filename = file.getName();
         String filepath = file.getAbsolutePath();
 %>
-        <img src="img.jsp?filename=<%=filepath.replaceAll("\\.png$", "") %>" alt="<%=filename%>"><br>
+        <img src="img.jsp?filename=<%=filename.replaceAll("\\.png$", "") %>" alt="<%=filename%>"><br>
 <%
     }
 %>
