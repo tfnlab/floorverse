@@ -93,9 +93,11 @@
     });
     %>
     <HR>
+      <% if (meme_text != null && meme_text.trim().length() > 0) {%>
     <%=ocrDescription%>
-    <HR>
-      <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+          <HR>
+    <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+      <% } %>
     <HR>
 <div class="d-flex flex-wrap">
   <% for (File file : files) { %>
