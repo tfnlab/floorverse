@@ -22,7 +22,7 @@
 </head>
 <body>
   <div class="container mt-5">
-  <h1>Create a Meme</h1>
+  <h1>Create Meme</h1>
   <HR>
   <form method="POST" action="index.jsp">
 
@@ -54,7 +54,7 @@
 
     <HR>
     <div class="form-group">
-      <label for="meme-text">Enter the subject for your meme:</label>
+      <label for="meme-text">Enter the topic for your meme: (NFT, Degen, WAGMI ...)</label>
       <input type="text" class="form-control" id="meme_text" name="meme_text">
     </div>
     <HR>
@@ -95,7 +95,7 @@
     %>
     <HR>
       <% if (meme_text != null && meme_text.trim().length() > 0) {%>
-    <%=ocrDescription%>
+    <!--<small><%=ocrDescription%></small>-->
           <HR>
     <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
       <% } %>
