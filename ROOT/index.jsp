@@ -27,7 +27,7 @@
 
       <div class="form-group">
     <label for="popular-meme-subjects">Select a Popular Meme Subject:</label>
-    <select id="popular-meme-subjects" class="form-control" >
+    <select name="popular_meme_subjects" id="popular_meme_subjects" class="form-control" >
       <option value="pepe">Pepe</option>
       <option value="doge">Doge</option>
       <option value="grumpy-cat">Grumpy Cat</option>
@@ -69,7 +69,7 @@
 
     // Validate form data
     if (meme_text != null && meme_text.trim().length() > 0) {
-      meme_text += " sujbect " + request.getParameter("meme-subject") ;
+      meme_text += " sujbect " + request.getParameter("popular_meme_subjects") ;
       try{
            Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/meme.py", "'" + meme_text + "'", uuid).start();
            String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
