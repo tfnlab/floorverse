@@ -43,7 +43,7 @@
   </div>
 
   <div class="container mt-5">
-  <h4>The Art of Memes</h4>
+  <h4>The Art of Meme</h4>
   <HR>
   <form method="POST" action="index.jsp">
 
@@ -76,7 +76,7 @@
     <HR>
     <div class="form-group">
       <label for="meme-text">Enter the topic for your meme: (NFT, Degen, WAGMI ...)</label>
-      <input type="text" class="form-control" id="meme_text" name="meme_text">
+      <input type="text" class="form-control" id="meme_text" name="meme_text" required>
     </div>
     <HR>
     <button type="submit" class="btn btn-primary">Create Meme</button>
