@@ -24,23 +24,31 @@
   <div class="container mt-5">
   <h1>Create a Meme</h1>
   <form method="POST" action="index.jsp">
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="meme-subject-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose a meme subject
-      </button>
-      <div class="dropdown-menu" aria-labelledby="meme-subject-dropdown">
-        <a class="dropdown-item" href="#" data-value="nft">NFT</a>
-        <a class="dropdown-item" href="#" data-value="cats">Cats</a>
-        <a class="dropdown-item" href="#" data-value="dogs">Dogs</a>
-        <a class="dropdown-item" href="#" data-value="babies">Babies</a>
-        <a class="dropdown-item" href="#" data-value="food">Food</a>
-        <a class="dropdown-item" href="#" data-value="technology">Technology</a>
-        <a class="dropdown-item" href="#" data-value="celebrities">Celebrities</a>
-        <a class="dropdown-item" href="#" data-value="politics">Politics</a>
-        <a class="dropdown-item" href="#" data-value="sports">Sports</a>
-        <a class="dropdown-item" href="#" data-value="travel">Travel</a>
-        <a class="dropdown-item" href="#" data-value="work">Work</a>
-      </div>
+
+      <div class="form-group">
+    <label for="popular-meme-subjects">Select a Popular Meme Subject:</label>
+    <select id="popular-meme-subjects" class="form-control" >
+      <option value="pepe">Pepe</option>
+      <option value="doge">Doge</option>
+      <option value="grumpy-cat">Grumpy Cat</option>
+      <option value="bad-luck-brian">Bad Luck Brian</option>
+      <option value="distracted-boyfriend">Distracted Boyfriend</option>
+      <option value="success-kid">Success Kid</option>
+      <option value="drake-hotline-bling">Drake Hotline Bling</option>
+      <option value="woman-yelling-at-a-cat">Woman Yelling at a Cat</option>
+      <option value="surprised-pikachu">Surprised Pikachu</option>
+      <option value="this-is-fine">This is Fine</option>
+      <option value="rickroll">Rickroll</option>
+      <option value="expanding-brain">Expanding Brain</option>
+      <option value="the-dress">The Dress</option>
+      <option value="hide-the-pain-harold">Hide the Pain Harold</option>
+      <option value="y-u-no">Y U No</option>
+      <option value="shut-up-and-take-my-money">Shut Up and Take My Money</option>
+      <option value="aliens-guy">Aliens Guy</option>
+      <option value="two-buttons">Two Buttons</option>
+      <option value="ight-imma-head-out">Ight Imma Head Out</option>
+      <option value="arthur-fist">Arthur Fist</option>
+    </select>
     </div>
 
 
