@@ -67,6 +67,7 @@
     <HR>
     <%=ocrDescription%>
     <HR>
+      <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
     <HR>
 <div class="d-flex flex-wrap">
   <% for (File file : files) { %>
