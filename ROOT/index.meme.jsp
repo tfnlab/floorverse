@@ -24,8 +24,6 @@
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
 
-<script src="js/all.min.js" ></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -59,7 +57,7 @@
         <HR>
         <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <HR>
-        <i class="fa fa-twitter"></i>
+        <i class="fa fa-speaker"></i>
         </a>
 
       </div>
