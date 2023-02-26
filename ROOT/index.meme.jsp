@@ -26,6 +26,9 @@
 
 <link href="css/all.css" rel="stylesheet">
 <script src="js/all.min.js" ></script>
+  <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/brands.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
 
 </head>
 <body>
