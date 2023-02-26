@@ -121,7 +121,7 @@
     <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
       <% } %>
     <HR>
-    Meme Total <%=files.length%>  
+    The Total Number of Memes Created stands at <%=files.length%>
     <HR>
 <div class="d-flex flex-wrap">
   <% for (File file : files) { %>
