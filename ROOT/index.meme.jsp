@@ -55,7 +55,7 @@
         <img src="img.jsp?filename=<%=meme_id %>" alt="<%=meme_id %>">
         <HR>
           Tweeter
-          <a href="https://twitter.com/share?text=#NFT&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+          <a href="https://twitter.com/share?text=NFT&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <i class="fa fa-share"></i>
         </a>
 
