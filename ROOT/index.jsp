@@ -19,7 +19,7 @@
     // Create an instance of the APIConfig class
     String meme_text = request.getParameter("meme_text");
     String uuid = java.util.UUID.randomUUID().toString();
-
+    String ocrDescription = "";
 
 
     // Validate form data
