@@ -24,11 +24,8 @@
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
 
-<link href="css/all.css" rel="stylesheet">
 <script src="js/all.min.js" ></script>
-  <link href="css/fontawesome.css" rel="stylesheet">
-  <link href="css/brands.css" rel="stylesheet">
-  <link href="css/solid.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
