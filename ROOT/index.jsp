@@ -46,7 +46,7 @@
             return name.toLowerCase().endsWith(".png");
         }
     });
-
+    %><%=ocrDescription%><%
     // Iterate through the PNG files and display each as an <img> tag
     for (File file : files) {
         String filename = file.getName();
