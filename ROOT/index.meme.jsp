@@ -23,7 +23,7 @@
 <meta name="twitter:title" content="Meme Genesis">
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container mt-5">
@@ -56,7 +56,7 @@
         <HR>
         <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <HR>
-          Tweet
+          <i class="fa-brands fa-twitter"></i>
         </a>
 
       </div>
