@@ -136,12 +136,24 @@
     });
     %>
     <HR>
-      <% if (meme_text != null && meme_text.trim().length() > 0) {%>
-    <!--<small><%=ocrDescription%></small>-->
-          <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
-    <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
-              </a>
-      <% } %>
+
+      <%
+         if (meme_text != null && meme_text.trim().length() > 0) {
+            File newimage = new File(dirPath + uuid + ".png");
+            if (newimage.exists()) {
+              %>
+              <!--<small><%=ocrDescription%></small>-->
+                    <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
+              <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+                        </a>
+              <%
+            } else {
+              %>
+                There was an error trying to generate meme, please try again
+              <%
+            }
+         }
+      %>
     <HR>
     The Total Number of Memes Created stands at <%=files.length%>
     <HR>
