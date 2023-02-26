@@ -24,6 +24,26 @@
   <div class="container mt-5">
   <h1>Create a Meme</h1>
   <form method="POST" action="index.jsp">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="meme-subject-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Choose a meme subject
+      </button>
+      <div class="dropdown-menu" aria-labelledby="meme-subject-dropdown">
+        <a class="dropdown-item" href="#" data-value="nft">NFT</a>
+        <a class="dropdown-item" href="#" data-value="cats">Cats</a>
+        <a class="dropdown-item" href="#" data-value="dogs">Dogs</a>
+        <a class="dropdown-item" href="#" data-value="babies">Babies</a>
+        <a class="dropdown-item" href="#" data-value="food">Food</a>
+        <a class="dropdown-item" href="#" data-value="technology">Technology</a>
+        <a class="dropdown-item" href="#" data-value="celebrities">Celebrities</a>
+        <a class="dropdown-item" href="#" data-value="politics">Politics</a>
+        <a class="dropdown-item" href="#" data-value="sports">Sports</a>
+        <a class="dropdown-item" href="#" data-value="travel">Travel</a>
+        <a class="dropdown-item" href="#" data-value="work">Work</a>
+      </div>
+    </div>
+
+
     <div class="form-group">
       <label for="meme-text">Enter the subject for your meme:</label>
       <input type="text" class="form-control" id="meme_text" name="meme_text">
@@ -41,7 +61,7 @@
 
     // Validate form data
     if (meme_text != null && meme_text.trim().length() > 0) {
-
+      meme_text += " sujbect " + request.getParameter("meme-subject") ;
       try{
            Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/meme.py", "'" + meme_text + "'", uuid).start();
            String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
