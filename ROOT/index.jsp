@@ -23,6 +23,7 @@
 <body>
   <div class="container mt-5">
   <h1>Create a Meme</h1>
+  <HR>
   <form method="POST" action="index.jsp">
 
       <div class="form-group">
@@ -51,7 +52,7 @@
     </select>
     </div>
 
-
+    <HR>
     <div class="form-group">
       <label for="meme-text">Enter the subject for your meme:</label>
       <input type="text" class="form-control" id="meme_text" name="meme_text">
