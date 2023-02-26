@@ -13,7 +13,7 @@
     APIConfig conf = new APIConfig();
 
     // Get the directory path and list all PNG files
-    String dirPath = conf.getPdfloc();
+    String dirPath = conf.getPdfloc() +  "../img/";
     File dir = new File(dirPath);
     File[] files = dir.listFiles(new FilenameFilter() {
         public boolean accept(File dir, String name) {
