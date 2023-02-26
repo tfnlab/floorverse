@@ -48,7 +48,12 @@
 <div class="d-flex flex-wrap">
     <div class="p-2">
       <div class="thumbnail">
-        <a href="index.meme.jsp?meme_id=<%=meme_id %>" ><img src="img.jsp?filename=<%=meme_id %>" alt="<%=meme_id %>"></a>
+        <img src="img.jsp?filename=<%=meme_id %>" alt="<%=meme_id %>">
+        <HR>
+        <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+          Tweet
+        </a>
+
       </div>
     </div>
 </div>
