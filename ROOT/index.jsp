@@ -28,7 +28,7 @@
     if (meme_text != null && meme_text.trim().length() > 0) {
 
       try{
-           Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/meme.py", "'" + meme_text + "'", meme_text).start();
+           Process pweb3 = new ProcessBuilder("python3", "/var/lib/tomcat9/webapps/py/meme.py", "'" + meme_text + "'", uuid).start();
            String stderr = IOUtils.toString(pweb3.getErrorStream(), Charset.defaultCharset());
            String stdout = IOUtils.toString(pweb3.getInputStream(), Charset.defaultCharset());
            ocrDescription = stdout + stderr + " MEME " ;
