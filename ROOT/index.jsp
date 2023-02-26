@@ -129,7 +129,7 @@
   <% for (File file : files) { %>
     <div class="p-2">
       <div class="thumbnail">
-        <img src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
+        <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" ><img src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>"></a>
       </div>
     </div>
   <% } %>
