@@ -18,6 +18,7 @@
       <label for="meme-text">Enter the subject for your meme:</label>
       <input type="text" class="form-control" id="meme_text" name="meme_text">
     </div>
+    <HR>
     <button type="submit" class="btn btn-primary">Create Meme</button>
   </form>
 
