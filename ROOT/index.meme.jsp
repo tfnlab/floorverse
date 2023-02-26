@@ -3,7 +3,7 @@
 <%@ page import="javax.servlet.*, javax.servlet.http.*" %>
 <%@ page import="com.tfnlab.api.con.APIConfig" %>
 <%@ page import="java.util.UUID" %>
-
+<% String meme_id = request.getParameter("meme_id"); %>
 <html>
 <head>
   <style>
@@ -46,7 +46,6 @@
 
 
   </div>
-  <% String meme_id = request.getParameter("meme_id"); %>
   <div class="container mt-5">
   <h4>The Art of Meme</h4>
   <HR>
