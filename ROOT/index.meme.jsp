@@ -55,7 +55,7 @@
         <img src="img.jsp?filename=<%=meme_id %>" alt="<%=meme_id %>">
         <HR>
           Tweeter
-          <a href="https://twitter.com/share?text=Check%20out%20this%20hilarious%20meme!%20%23MemeEngagement%20%23LaughOutLoud&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+          <a href="https://twitter.com/share?text=Check%20out%20this%20hilarious%20meme!%20%23MemeEngagement%20%23LaughOutLoud%20%23NFT%20%23MEMEGENESIS&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <i class="fa fa-share"></i>
         </a>
 
