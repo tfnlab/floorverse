@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
 
-<link rel="stylesheet" href="css/all.min.css"  >
+<link href="css/all.css" rel="stylesheet">
 <script src="js/all.min.js" ></script>
 
 </head>
