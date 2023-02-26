@@ -6,6 +6,16 @@
 
 <html>
 <head>
+  <style>
+    .thumbnail img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+</style>
 <title>PNG Files</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -58,16 +68,16 @@
     <%=ocrDescription%>
     <HR>
     <HR>
-    <%
-    // Iterate through the PNG files and display each as an <img> tag
-    for (File file : files) {
-        String filename = file.getName();
-        String filepath = file.getAbsolutePath();
-%>
-        <img src="img.jsp?filename=<%=filename.replaceAll("\\.png$", "") %>" alt="<%=filename%>"><br>
-<%
-    }
-%>
+<div class="d-flex flex-wrap">
+  <% for (File file : files) { %>
+    <div class="p-2">
+      <div class="thumbnail">
+        <img src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
+      </div>
+    </div>
+  <% } %>
+</div>
+
   </div>
 </body>
 </html>
