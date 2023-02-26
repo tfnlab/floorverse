@@ -70,6 +70,8 @@
       <option value="two-buttons">Two Buttons</option>
       <option value="ight-imma-head-out">Ight Imma Head Out</option>
       <option value="arthur-fist">Arthur Fist</option>
+      <option value="drake_hotline_bling">Drake Hotline Bling</option>
+      <option value="pikachu_surprised">Pikachu Surprised</option>
     </select>
     </div>
 
