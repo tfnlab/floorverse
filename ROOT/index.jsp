@@ -23,7 +23,8 @@
 <body>
   <div class="container mt-5">
   <h1>Meme Genesis</h1>
-  <h3>Create Meme</h3>
+  <HR>
+  <h4>The Art of Memes</h4>
   <HR>
   <form method="POST" action="index.jsp">
 
