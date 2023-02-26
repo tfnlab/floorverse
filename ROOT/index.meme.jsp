@@ -56,8 +56,7 @@
         <HR>
         <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <HR>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fab fa-twitter"></i>
+          Tweeter
           <i class="fa fa-share"></i>
         </a>
 
