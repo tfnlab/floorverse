@@ -72,6 +72,25 @@
       <option value="arthur-fist">Arthur Fist</option>
       <option value="drake_hotline_bling">Drake Hotline Bling</option>
       <option value="pikachu_surprised">Pikachu Surprised</option>
+      <option value="kermit-tea">Kermit Tea</option>
+      <option value="crying-cat">Crying Cat</option>
+      <option value="confused-mr-krabs">Confused Mr. Krabs</option>
+      <option value="dank-meme">Dank Meme</option>
+      <option value="mocking-spongebob">Mocking Spongebob</option>
+      <option value="evil-toddler">Evil Toddler</option>
+      <option value="travolta-confused">Travolta Confused</option>
+      <option value="distracted-puppy">Distracted Puppy</option>
+      <option value="gru-plan">Gru Plan</option>
+      <option value="karen">Karen</option>
+      <option value="roll-safe">Roll Safe</option>
+      <option value="wait-thats-illegal">Wait, That's Illegal</option>
+      <option value="spongebob-imagination">Spongebob Imagination</option>
+      <option value="savage-patrick">Savage Patrick</option>
+      <option value="you-know-i-had-to-do-it-to-em">You Know I Had to Do It to Em</option>
+      <option value="mr-bean">Mr. Bean</option>
+      <option value="the-most-interesting-man-in-the-world">The Most Interesting Man in the World</option>
+      <option value="bad-joke-eel">Bad Joke Eel</option>
+      <option value="change-my-mind">Change My Mind</option>
     </select>
     </div>
 
