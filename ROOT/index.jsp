@@ -121,6 +121,8 @@
     <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
       <% } %>
     <HR>
+    Meme Total <%=files.length%>  
+    <HR>
 <div class="d-flex flex-wrap">
   <% for (File file : files) { %>
     <div class="p-2">
