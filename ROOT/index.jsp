@@ -13,11 +13,14 @@
 <body>
   <div class="container mt-5">
   <h1>Create a Meme</h1>
-	<form method="POST" action="index.jsp">
-		<label for="meme-text">Enter the text for your meme:</label><br>
-		<input type="text" id="meme_text" name="meme_text" ><br><br>
-		<input type="submit" value="Create Meme">
-	</form>
+  <form method="POST" action="index.jsp">
+    <div class="form-group">
+      <label for="meme-text">Enter the subject for your meme:</label>
+      <input type="text" class="form-control" id="meme_text" name="meme_text">
+    </div>
+    <button type="submit" class="btn btn-primary">Create Meme</button>
+  </form>
+
 <%
     // Create an instance of the APIConfig class
     String meme_text = request.getParameter("meme_text");
