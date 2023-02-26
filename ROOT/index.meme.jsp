@@ -54,10 +54,9 @@
       <div class="thumbnail">
         <img src="img.jsp?filename=<%=meme_id %>" alt="<%=meme_id %>">
         <HR>
-        <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
-        <HR>
           Tweeter
-          <i class="fa fa-share"></i>
+          <a href="https://twitter.com/share?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+        <i class="fa fa-share"></i>
         </a>
 
       </div>
