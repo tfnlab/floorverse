@@ -22,7 +22,8 @@
 </head>
 <body>
   <div class="container mt-5">
-  <h1>Create Meme</h1>
+  <h1>Meme Genesis</h1>
+  <h3>Create Meme</h3>
   <HR>
   <form method="POST" action="index.jsp">
 
