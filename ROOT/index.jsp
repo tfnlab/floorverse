@@ -201,22 +201,9 @@
   </script>
   <script>
 		$(document).ready(function(){
-			// Add smooth scrolling to all links
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function(){
-						window.location.hash = hash;
-					});
-				}
-			});
-
 			// Enable the navbar toggle button
 			$('.navbar-toggler').click(function(){
-				$('body').toggleClass('nav-open');
+				$('.navbar-collapse').toggleClass('show');
 			});
 		});
 	</script>
