@@ -28,19 +28,12 @@
 <body>
 
 
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="index.html">Meme Genesis</a></h1>
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto" href="https://mint.memegenesis.com">Mint</a></li>
-          <li><a class="nav-link scrollto" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
-
+  <nav id="navbar" class="navbar order-last order-lg-0">
+    <ul>
+      <li><a class="nav-link scrollto" href="https://mint.memegenesis.com">Mint</a></li>
+      <li><a class="nav-link scrollto" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a></li>
+    </ul>
+  </nav><!-- .navbar -->
   <div class="container mt-5">
       <HR>
       <h4>The Art of Meme</h4>
