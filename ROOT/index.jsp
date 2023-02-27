@@ -155,7 +155,7 @@
           </p>
           <a href="https://mint.memegenesis.com" class="btn-get-started">Available for mint at 0.01 ETH</a>
         </div>
-        <div class="container mt-5">
+        <div class="mt-5">
         <form method="POST" action="index.jsp">
 
             <div class="form-group">
