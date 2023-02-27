@@ -31,23 +31,33 @@
 </head>
 <body>
   <div class="container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    &nbsp;&nbsp;<a class="navbar-brand" href="index.jsp">Meme Genesis</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="https://mint.memegenesis.com">Mint</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.jsp">Meme Genesis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://mint.memegenesis.com">Mint</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!-- Mobile Menu List -->
+  <div class="collapse" id="mobileNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://mint.memegenesis.com">Mint</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
+      </li>
+    </ul>
+  </div>
 
   </div>
   <div class="container mt-5">
