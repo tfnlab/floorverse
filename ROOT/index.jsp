@@ -141,90 +141,11 @@
           </p>
           <a href="https://mint.memegenesis.com" class="btn-get-started">Available for mint at 0.01 ETH</a>
         </div>
-        <div class="mt-5">
-          <%
-          if (meme_text != null && meme_text.trim().length() > 0) {
-             File newimage = new File(dirPath + uuid + ".png");
-             if (newimage.exists()) {
-               %>
-               <!--<small><%=ocrDescription%></small>-->
-                     <HR>
-                     <a href="index.meme.jsp?meme_id=<%=uuid %>" >
-               <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
-                     </a>
-                         <HR>
-               <%
-             } else {
-               %>
-                 There was an error trying to generate meme, please try again
-               <%
-             }
-          }
-          %>
-        <form method="POST" action="index.jsp">
-
-            <div class="form-group">
-          <label for="popular-meme-subjects">Select a Popular Meme Subject:</label>
-          <select name="popular_meme_subjects" id="popular_meme_subjects" class="form-control" >
-            <option value="pepe">Pepe</option>
-            <option value="doge">Doge</option>
-            <option value="grumpy-cat">Grumpy Cat</option>
-            <option value="bad-luck-brian">Bad Luck Brian</option>
-            <option value="distracted-boyfriend">Distracted Boyfriend</option>
-            <option value="success-kid">Success Kid</option>
-            <option value="drake-hotline-bling">Drake Hotline Bling</option>
-            <option value="woman-yelling-at-a-cat">Woman Yelling at a Cat</option>
-            <option value="surprised-pikachu">Surprised Pikachu</option>
-            <option value="this-is-fine">This is Fine</option>
-            <option value="rickroll">Rickroll</option>
-            <option value="expanding-brain">Expanding Brain</option>
-            <option value="the-dress">The Dress</option>
-            <option value="hide-the-pain-harold">Hide the Pain Harold</option>
-            <option value="y-u-no">Y U No</option>
-            <option value="shut-up-and-take-my-money">Shut Up and Take My Money</option>
-            <option value="aliens-guy">Aliens Guy</option>
-            <option value="two-buttons">Two Buttons</option>
-            <option value="ight-imma-head-out">Ight Imma Head Out</option>
-            <option value="arthur-fist">Arthur Fist</option>
-            <option value="drake_hotline_bling">Drake Hotline Bling</option>
-            <option value="pikachu_surprised">Pikachu Surprised</option>
-            <option value="kermit-tea">Kermit Tea</option>
-            <option value="crying-cat">Crying Cat</option>
-            <option value="confused-mr-krabs">Confused Mr. Krabs</option>
-            <option value="dank-meme">Dank Meme</option>
-            <option value="mocking-spongebob">Mocking Spongebob</option>
-            <option value="evil-toddler">Evil Toddler</option>
-            <option value="travolta-confused">Travolta Confused</option>
-            <option value="distracted-puppy">Distracted Puppy</option>
-            <option value="gru-plan">Gru Plan</option>
-            <option value="karen">Karen</option>
-            <option value="roll-safe">Roll Safe</option>
-            <option value="wait-thats-illegal">Wait, That's Illegal</option>
-            <option value="spongebob-imagination">Spongebob Imagination</option>
-            <option value="savage-patrick">Savage Patrick</option>
-            <option value="you-know-i-had-to-do-it-to-em">You Know I Had to Do It to Em</option>
-            <option value="mr-bean">Mr. Bean</option>
-            <option value="the-most-interesting-man-in-the-world">The Most Interesting Man in the World</option>
-            <option value="bad-joke-eel">Bad Joke Eel</option>
-            <option value="change-my-mind">Change My Mind</option>
-          </select>
-          </div>
-
-          <HR>
-          <div class="form-group">
-            <label for="meme-text">Enter the topic for your meme: (NFT, Degen, WAGMI ...)</label>
-            <input type="text" class="form-control" id="meme_text" name="meme_text" required>
-          </div>
-          <HR>
-          <button type="submit" class="btn btn-primary">Create Meme</button>
-        </form>
-        </div>
-
       </div>
     </div>
   </section><!-- End Hero Section -->
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
+  <main id="main" data-aos="fade" data-aos-delay="500">
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -233,6 +154,7 @@
         <% for (File file : files) { %>
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="gallery-item h-100">
+
                 <img src="meme/<%=file.getName()%>" class="img-fluid" alt="">
                 <div class="gallery-links d-flex align-items-center justify-content-center">
                   <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" class="details-link"><i class="bi bi-link-45deg"></i></a>
