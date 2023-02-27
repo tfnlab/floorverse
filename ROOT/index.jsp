@@ -172,7 +172,7 @@
               <div class="gallery-item h-100">
                 <img src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" class="img-fluid" alt="">
                 <div class="gallery-links d-flex align-items-center justify-content-center">
-                  <a href="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                  <a href="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" title="ID <%=file.getName().replaceAll("\\.png$", "") %>" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
                   <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -188,7 +188,7 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>PhotoFolio</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>TFNLab</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
