@@ -113,7 +113,7 @@
           <HR>
             Share On Tweeter
           <a href="https://twitter.com/share?text=hey%20@genesis_meme%20Check%20out%20this%20meme!%20%23MemeEngagement%20%23LaughOutLoud%20%23NFT%20%23MEMEGENESIS&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
-            <i class="fa fa-share"></i>
+            <i class="bi bi-twitter"></i>
           </a>
 
         </p>
@@ -178,7 +178,7 @@
             </div>
         <% } %>
 
-      </div>      
+      </div>
     </section>
 
   </main><!-- End #main -->
