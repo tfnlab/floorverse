@@ -24,7 +24,7 @@
       out.println("<p class='text-success'>Review added successfully!</p>");
     } catch (Exception e) {
       e.printStackTrace();
-      out.println("<p class='text-danger'>Error adding review.</p>");
+      out.println("<p class='text-danger'>Error adding review.</p> " + e.getMessage());
     }
   }
 %>
