@@ -50,13 +50,12 @@
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
         <h1>Meme Genesis</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.jsp" class="active">Home</a></li>
           <li><a href="https://mint.memegenesis.com">Mint</a></li>
           <li><a href="https://opensea.io/collection/meme-genesis-1">OpenSea</a></li>
           <!--
