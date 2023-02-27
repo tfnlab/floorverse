@@ -45,7 +45,7 @@
       <HR>
       <h4>The Art of Meme</h4>
       <HR>
-      <form method="POST" action="index.jsp">
+      <form method="POST" action="index.bk.jsp">
 
           <div class="form-group">
         <label for="popular-meme-subjects">Select a Popular Meme Subject:</label>
