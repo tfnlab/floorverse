@@ -47,6 +47,7 @@
   </div>
 
   <div class="container mt-5">
+  <HR>
   <h4>The Art of Meme</h4>
   <HR>
   <form method="POST" action="index.jsp">
