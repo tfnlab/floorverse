@@ -27,7 +27,6 @@
 <body>
   <div class="container mt-5">
       <h4>The Art of Meme</h4>
-      <HR>
 
     <%
         // Create an instance of the APIConfig class
