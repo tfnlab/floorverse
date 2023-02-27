@@ -111,14 +111,74 @@
         <p>
           <img src="img.jsp?filename=<%=meme_id %>" alt="<%=meme_id %>">
           <HR>
-            Tweeter
-            <a href="https://twitter.com/share?text=hey%20@genesis_meme%20Check%20out%20this%20meme!%20%23MemeEngagement%20%23LaughOutLoud%20%23NFT%20%23MEMEGENESIS&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
-          <i class="fa fa-share"></i>
+            Share On Tweeter
+          <a href="https://twitter.com/share?text=hey%20@genesis_meme%20Check%20out%20this%20meme!%20%23MemeEngagement%20%23LaughOutLoud%20%23NFT%20%23MEMEGENESIS&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+            <i class="fa fa-share"></i>
           </a>
 
         </p>
 
       </div>
+
+      <div class="container mt-5">
+      <%
+        ReviewDAO reviewDAO = new ReviewDAO();
+        if (request.getMethod().equals("POST")) {
+            // Get the form data and create a new Review object
+          int memeId = Integer.parseInt("0");
+          String meme_uuid = request.getParameter("meme_id");
+          int rating = Integer.parseInt(request.getParameter("rating"));
+          String comment = request.getParameter("comment");
+          Timestamp now = new Timestamp(System.currentTimeMillis());
+          Review review = new Review(0, memeId, rating, comment, now, now, meme_uuid);
+
+          // Use the ReviewDAO object to insert the new review into the database
+          try {
+            reviewDAO.insertReview(review);
+            out.println("<p class='text-success'>Review added successfully!</p>");
+          } catch (Exception e) {
+            e.printStackTrace();
+            out.println("<p class='text-danger'>Error adding review.</p> ");
+          }
+        }
+      %>
+      <form action="index.meme.jsp" method="post">
+          <input type="hidden" class="form-control" id="meme_id" name="meme_id" required value="<%=meme_id %>">
+        <div class="form-group">
+          <label for="rating">Rating:</label>
+          <select class="form-control" id="rating" name="rating" required>
+            <option value="">-- Select Rating --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+        </div>
+        <HR>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+        </div>
+
+          <div class="container mt-5">
+            <% double averageRating = reviewDAO.getAverageRatingByMemeUUID(meme_id); %>
+            <p>Average Rating: <%= averageRating %></p>
+              <HR>
+        <% List<Review> reviews = reviewDAO.getAllReviewsByMemeUUID(meme_id); %>
+
+        <% for (Review review : reviews) { %>
+            <div class="mt-2">
+                <p>Rating: <%= review.getRating() %></p>
+                <p>Comment: <%= review.getComment() %></p>
+            </div>
+        <% } %>
+
+      </div>      
     </section>
 
   </main><!-- End #main -->
