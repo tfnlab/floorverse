@@ -5,6 +5,7 @@
 <%@ page import="java.util.UUID" %>
 <%@ page import="com.tfnlab.mg.mysql.Review" %>
 <%@ page import="com.tfnlab.mg.mysql.ReviewDAO" %>
+<%@ page import="java.sql.Timestamp" %>
 <% String meme_id = request.getParameter("meme_id"); %>
 <%
   if (request.getMethod().equals("POST")) {
