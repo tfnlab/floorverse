@@ -7,27 +7,7 @@
 <%@ page import="com.tfnlab.mg.mysql.ReviewDAO" %>
 <%@ page import="java.sql.Timestamp" %>
 <% String meme_id = request.getParameter("meme_id"); %>
-<%
-  if (request.getMethod().equals("POST")) {
-      // Get the form data and create a new Review object
-    int memeId = Integer.parseInt("0");
-    String meme_uuid = request.getParameter("meme_id");
-    int rating = Integer.parseInt(request.getParameter("rating"));
-    String comment = request.getParameter("comment");
-    Timestamp now = new Timestamp(System.currentTimeMillis());
-    Review review = new Review(0, memeId, rating, comment, now, now, meme_uuid);
 
-    // Use the ReviewDAO object to insert the new review into the database
-    ReviewDAO reviewDAO = new ReviewDAO();
-    try {
-      reviewDAO.insertReview(review);
-      out.println("<p class='text-success'>Review added successfully!</p>");
-    } catch (Exception e) {
-      e.printStackTrace();
-      out.println("<p class='text-danger'>Error adding review.</p> " + e.getMessage());
-    }
-  }
-%>
 <html>
 <head>
   <style>
@@ -91,6 +71,27 @@
 
 
   <div class="container mt-5">
+  <%
+    ReviewDAO reviewDAO = new ReviewDAO();
+    if (request.getMethod().equals("POST")) {
+        // Get the form data and create a new Review object
+      int memeId = Integer.parseInt("0");
+      String meme_uuid = request.getParameter("meme_id");
+      int rating = Integer.parseInt(request.getParameter("rating"));
+      String comment = request.getParameter("comment");
+      Timestamp now = new Timestamp(System.currentTimeMillis());
+      Review review = new Review(0, memeId, rating, comment, now, now, meme_uuid);
+
+      // Use the ReviewDAO object to insert the new review into the database
+      try {
+        reviewDAO.insertReview(review);
+        out.println("<p class='text-success'>Review added successfully!</p>");
+      } catch (Exception e) {
+        e.printStackTrace();
+        out.println("<p class='text-danger'>Error adding review.</p> ");
+      }
+    }
+  %>
   <form action="index.meme.jsp" method="post">
       <input type="hidden" class="form-control" id="meme_id" name="meme_id" required value="<%=meme_id %>">
     <div class="form-group">
@@ -113,6 +114,20 @@
   </form>
 
     </div>
+
+      <div class="container mt-5">
+    <% List<Review> reviews = rDAO.getAllReviewsByMemeUUID(meme_id); %>
+
+    <% for (Review review : reviews) { %>
+        <div>
+            <p>Meme ID: <%= review.getMemeId() %></p>
+            <p>Rating: <%= review.getRating() %></p>
+            <p>Comment: <%= review.getComment() %></p>
+            <p>Meme UUID: <%= review.getMemeUUID() %></p>
+        </div>
+    <% } %>
+
+  </div>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH16PDS3VF"></script>
