@@ -45,19 +45,9 @@
             <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
           </li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
     </nav>
-  <!-- Mobile Menu List -->
-  <div class="collapse" id="mobileNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="https://mint.memegenesis.com">Mint</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
-      </li>
-    </ul>
-  </div>
 
   </div>
   <div class="container mt-5">
