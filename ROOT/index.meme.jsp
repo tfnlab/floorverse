@@ -119,7 +119,7 @@
     <% List<Review> reviews = reviewDAO.getAllReviewsByMemeUUID(meme_id); %>
 
     <% for (Review review : reviews) { %>
-        <div>
+        <div class="mt-2">
             <p>Rating: <%= review.getRating() %></p>
             <p>Comment: <%= review.getComment() %></p>
         </div>
