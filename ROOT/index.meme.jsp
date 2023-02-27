@@ -3,6 +3,13 @@
 <%@ page import="javax.servlet.*, javax.servlet.http.*" %>
 <%@ page import="com.tfnlab.api.con.APIConfig" %>
 <%@ page import="java.util.UUID" %>
+<%@ page import="com.tfnlab.mg.mysql.Review" %>
+<%@ page import="com.tfnlab.mg.mysql.ReviewDAO" %>
+
+<%
+  Review review = new Review();
+  ReviewDAO rDao = new ReviewDAO();
+%>
 <% String meme_id = request.getParameter("meme_id"); %>
 <html>
 <head>
