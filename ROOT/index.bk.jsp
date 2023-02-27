@@ -142,7 +142,7 @@
                 File newimage = new File(dirPath + uuid + ".png");
                 if (newimage.exists()) {
                   %>
-                  <!--<small><%=ocrDescription%></small>-->
+                  <small><%=ocrDescription%></small>
                         <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
                   <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
                             </a>
