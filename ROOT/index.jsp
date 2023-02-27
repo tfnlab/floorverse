@@ -55,7 +55,7 @@
 			</ul>
 		</div>
 	</nav>
-    
+
   <div class="container mt-5">
       <h4>The Art of Meme</h4>
 
@@ -199,5 +199,26 @@
 
     gtag('config', 'G-HH16PDS3VF');
   </script>
+  <script>
+		$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+
+			// Enable the navbar toggle button
+			$('.navbar-toggler').click(function(){
+				$('body').toggleClass('nav-open');
+			});
+		});
+	</script>
 </body>
 </html>
