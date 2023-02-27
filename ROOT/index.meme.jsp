@@ -116,7 +116,7 @@
     </div>
 
       <div class="container mt-5">
-    <% List<Review> reviews = rDAO.getAllReviewsByMemeUUID(meme_id); %>
+    <% List<Review> reviews = reviewDAO.getAllReviewsByMemeUUID(meme_id); %>
 
     <% for (Review review : reviews) { %>
         <div>
