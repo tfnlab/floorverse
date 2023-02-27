@@ -137,6 +137,7 @@
         %>
         <HR>
 
+          <small><%=ocrDescription%></small>
           <%
              if (meme_text != null && meme_text.trim().length() > 0) {
                 File newimage = new File(dirPath + uuid + ".png");
