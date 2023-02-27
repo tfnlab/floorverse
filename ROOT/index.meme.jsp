@@ -71,6 +71,32 @@
 </div>
 
   </div>
+
+
+  <div class="container mt-5">
+  <form action="index.meme.jsp" method="post">
+      <input type="hidden" class="form-control" id="meme_id" name="meme_id" required value="<%=meme_id %>">
+    <div class="form-group">
+      <label for="rating">Rating:</label>
+      <select class="form-control" id="rating" name="rating" required>
+        <option value="">-- Select Rating --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+    </div>
+    <HR>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+    </div>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH16PDS3VF"></script>
   <script>
