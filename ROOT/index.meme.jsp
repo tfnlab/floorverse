@@ -5,20 +5,16 @@
 <%@ page import="java.util.UUID" %>
 <%@ page import="com.tfnlab.mg.mysql.Review" %>
 <%@ page import="com.tfnlab.mg.mysql.ReviewDAO" %>
-
-<%
-  Review review = new Review();
-  ReviewDAO rDao = new ReviewDAO();
-%>
 <% String meme_id = request.getParameter("meme_id"); %>
 <%
   if (request.getMethod().equals("POST")) {
       // Get the form data and create a new Review object
-    int memeId = Integer.parseInt(request.getParameter("meme_id"));
+    int memeId = Integer.parseInt("0");
+    String meme_uuid = request.getParameter("meme_id");
     int rating = Integer.parseInt(request.getParameter("rating"));
     String comment = request.getParameter("comment");
     Timestamp now = new Timestamp(System.currentTimeMillis());
-    Review review = new Review(0, memeId, rating, comment, now, now);
+    Review review = new Review(0, memeId, rating, comment, now, now, meme_uuid);
 
     // Use the ReviewDAO object to insert the new review into the database
     ReviewDAO reviewDAO = new ReviewDAO();
