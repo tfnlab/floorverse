@@ -46,7 +46,7 @@
 
   </div>
 
-  <div class="container mt-5">
+  <div class="container mt-1">
   <HR>
   <h4>The Art of Meme</h4>
   <HR>
