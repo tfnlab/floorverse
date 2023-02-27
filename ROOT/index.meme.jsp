@@ -120,10 +120,8 @@
 
     <% for (Review review : reviews) { %>
         <div>
-            <p>Meme ID: <%= review.getMemeId() %></p>
             <p>Rating: <%= review.getRating() %></p>
             <p>Comment: <%= review.getComment() %></p>
-            <p>Meme UUID: <%= review.getMemeUUID() %></p>
         </div>
     <% } %>
 
