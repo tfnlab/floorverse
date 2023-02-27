@@ -41,7 +41,7 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="container mt-1">
+  <div class="container mt-5">
       <HR>
       <h4>The Art of Meme</h4>
       <HR>
