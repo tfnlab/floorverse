@@ -22,7 +22,7 @@
     try {
       reviewDAO.insertReview(review);
       out.println("<p class='text-success'>Review added successfully!</p>");
-    } catch (SQLException e) {
+    } catch (Exception e) {
       e.printStackTrace();
       out.println("<p class='text-danger'>Error adding review.</p>");
     }
