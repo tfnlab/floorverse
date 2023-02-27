@@ -11,6 +11,26 @@
   ReviewDAO rDao = new ReviewDAO();
 %>
 <% String meme_id = request.getParameter("meme_id"); %>
+<%
+  if (request.getMethod().equals("POST")) {
+      // Get the form data and create a new Review object
+    int memeId = Integer.parseInt(request.getParameter("meme_id"));
+    int rating = Integer.parseInt(request.getParameter("rating"));
+    String comment = request.getParameter("comment");
+    Timestamp now = new Timestamp(System.currentTimeMillis());
+    Review review = new Review(0, memeId, rating, comment, now, now);
+
+    // Use the ReviewDAO object to insert the new review into the database
+    ReviewDAO reviewDAO = new ReviewDAO();
+    try {
+      reviewDAO.insertReview(review);
+      out.println("<p class='text-success'>Review added successfully!</p>");
+    } catch (SQLException e) {
+      e.printStackTrace();
+      out.println("<p class='text-danger'>Error adding review.</p>");
+    }
+  }
+%>
 <html>
 <head>
   <style>
