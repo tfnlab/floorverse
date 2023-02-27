@@ -26,7 +26,6 @@
 </head>
 <body>
   <div class="container mt-5">
-      <HR>
       <h4>The Art of Meme</h4>
       <HR>
       <form method="POST" action="index.jsp">
@@ -140,9 +139,9 @@
              }
           %>
         <HR>
-        The Total Number of Memes Created stands at <%=files.length%>
-        <HR>
-        <a class="nav-link scrollto" href="https://mint.memegenesis.com">Mint</a> <a class="nav-link scrollto" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
+        The Total Number of Memes Created stands at <%=files.length%> (
+        <a href="https://mint.memegenesis.com">Mint</a> or
+        <a href="https://opensea.io/collection/meme-genesis-1">Buy</a> )
         <HR>
     <div class="d-flex flex-wrap">
       <% for (File file : files) { %>
