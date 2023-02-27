@@ -47,7 +47,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+      <a href="index.jsp" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Meme Genesis</h1>
@@ -55,7 +55,6 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.jsp" class="active">Home</a></li>
           <li><a href="https://mint.memegenesis.com">Mint</a></li>
           <li><a href="https://opensea.io/collection/meme-genesis-1">OpenSea</a></li>
           <!--
