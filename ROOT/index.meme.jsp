@@ -116,6 +116,9 @@
     </div>
 
       <div class="container mt-5">
+        <% double averageRating = reviewDAO.getAverageRatingByMemeUUID("meme_id"); %>
+        <p>Average Rating: <%= averageRating %></p>
+          <HR>
     <% List<Review> reviews = reviewDAO.getAllReviewsByMemeUUID(meme_id); %>
 
     <% for (Review review : reviews) { %>
