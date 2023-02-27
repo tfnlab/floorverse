@@ -127,21 +127,7 @@
                 return name.toLowerCase().endsWith(".png");
             }
         });
-             if (meme_text != null && meme_text.trim().length() > 0) {
-                File newimage = new File(dirPath + uuid + ".png");
-                if (newimage.exists()) {
-                  %>
-                  <!--<small><%=ocrDescription%></small>-->
-                        <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
-                  <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
-                            </a>
-                  <%
-                } else {
-                  %>
-                    There was an error trying to generate meme, please try again
-                  <%
-                }
-             }
+
           %>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
@@ -156,6 +142,23 @@
           <a href="https://mint.memegenesis.com" class="btn-get-started">Available for mint at 0.01 ETH</a>
         </div>
         <div class="mt-5">
+          <%
+          if (meme_text != null && meme_text.trim().length() > 0) {
+             File newimage = new File(dirPath + uuid + ".png");
+             if (newimage.exists()) {
+               %>
+               <!--<small><%=ocrDescription%></small>-->
+                     <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
+               <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+                         </a>
+               <%
+             } else {
+               %>
+                 There was an error trying to generate meme, please try again
+               <%
+             }
+          }
+          %>
         <form method="POST" action="index.jsp">
 
             <div class="form-group">
