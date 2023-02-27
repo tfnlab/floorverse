@@ -127,7 +127,6 @@
           <HR>
           <button type="submit" class="btn btn-primary">Create Meme</button>
         </form>
-        <HR>
         <!--<small><%=ocrDescription%></small>-->
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
@@ -138,15 +137,17 @@
                       <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
                 <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
                           </a>
+                          <HR>
                 <%
               } else {
                 %>
                   There was an error trying to generate meme, please try again
                 <%
               }
+           }else{
+             %><HR><%
            }
         %>
-        <HR>
     <div class="d-flex flex-wrap">
       <% for (File file : files) { %>
         <div class="p-2">
