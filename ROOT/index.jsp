@@ -148,9 +148,11 @@
              if (newimage.exists()) {
                %>
                <!--<small><%=ocrDescription%></small>-->
-                     <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
+                     <HR>
+                     <a href="index.meme.jsp?meme_id=<%=uuid %>" >
                <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
-                         </a>
+                     </a>
+                         <HR>
                <%
              } else {
                %>
