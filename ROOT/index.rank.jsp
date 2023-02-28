@@ -69,10 +69,10 @@
               <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %>" >
               <img class="card-img-top" src="img.jsp?filename=<%= review.getMeme_uuid() %>" alt="Rating <%= review.getRating() %>">
               </a>
-              <p>
+              <p class="card-text">
                 Rating <%= review.getRating() %>
               </p>
-
+              <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %" class="btn btn-primary">Reviews</a>
             </div>
           </div>
       <% } %>
