@@ -72,7 +72,7 @@
               <p class="card-text">
                 Rating <%= review.getRating() %>
               </p>
-              <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %" class="btn btn-primary">Reviews</a>
+              <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %>" class="btn btn-primary">Reviews</a>
             </div>
           </div>
       <% } %>
