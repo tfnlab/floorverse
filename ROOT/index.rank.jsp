@@ -82,9 +82,6 @@
       }%>
     </div>
 
-      <% for (File file : files) { %>
-
-      <% } %>
 
   </div>
 
