@@ -151,11 +151,20 @@
                 <!--<small><%=ocrDescription%></small>-->
                       <HR>
                       <div class="jumbotron">
-                      <a href="index.meme.jsp?meme_id=<%=uuid %>" >
-                      <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
-                      </a>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-6 offset-md-3 text-center">
+                              <a href="index.meme.jsp?meme_id=<%=uuid %>" >
+                              <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+                              </a>
+                              <img src="your-image-source" alt="your-image-alt" class="img-fluid">
+                              <h1><%=uuid %></h1>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <HR>                      
+                      <HR>
+
                 <%
               } else {
                 %>
