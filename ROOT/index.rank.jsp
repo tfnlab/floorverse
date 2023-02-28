@@ -54,7 +54,6 @@
 
         %>
 
-        <!--<small><%=ocrDescription%></small>-->
         <div class="container mt-5">
       <%try{%>
           <% double averageRating = reviewDAO.getAverageRating(); %>
