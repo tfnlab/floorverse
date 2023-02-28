@@ -6,7 +6,12 @@
 <%@ page import="com.tfnlab.mg.mysql.Review" %>
 <%@ page import="com.tfnlab.mg.mysql.ReviewDAO" %>
 <%@ page import="java.sql.Timestamp" %>
-<% String meme_id = request.getParameter("meme_id"); %>
+<%
+
+String meme_id = request.getParameter("meme_id"); 
+meme_id = meme_id.replace("/", "").replace(".", "");
+
+%>
 
 <html>
 <head>
