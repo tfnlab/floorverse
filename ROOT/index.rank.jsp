@@ -3,6 +3,7 @@
 <%@ page import="javax.servlet.*, javax.servlet.http.*" %>
 <%@ page import="com.tfnlab.api.con.APIConfig" %>
 <%@ page import="java.util.UUID" %>
+<%@ page import="java.util.List" %>
 <%@ page import="com.tfnlab.mg.mysql.Review" %>
 <%@ page import="com.tfnlab.mg.mysql.ReviewDAO" %>
 <%@ page import="java.sql.Timestamp" %>
