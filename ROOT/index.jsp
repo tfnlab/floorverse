@@ -228,7 +228,9 @@
         <%}%>
       <% } %>
       <HR>
+      <%if(request.getParameter("showall"==null){%>
       <a href="index.jsp?showall=true" >show all</a>
+      <%}%>
       <HR>
     </div>
 
