@@ -214,7 +214,10 @@
         %>
 
     <div class="d-flex flex-wrap">
+      <% int count = 0;%>
       <% for (File file : files) { %>
+        <% count += 1; %>
+        <%if(count<100){%>
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
@@ -222,6 +225,7 @@
             </a>
           </div>
         </div>
+        <%}%>
       <% } %>
     </div>
 
