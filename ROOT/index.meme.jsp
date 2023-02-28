@@ -49,6 +49,9 @@ meme_id = meme_id.replace("/", "").replace(".", "");
           <li class="nav-item">
             <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.rank.jsp">Ranking</a>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>

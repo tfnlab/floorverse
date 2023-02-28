@@ -34,6 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.rank.jsp">Ranking</a>
+        </li>
       </ul>
       <!--
       <form class="form-inline my-2 my-lg-0">
