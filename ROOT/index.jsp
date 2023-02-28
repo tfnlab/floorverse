@@ -6,16 +6,6 @@
 
 <html>
 <head>
-  <style>
-    .thumbnail img {
-      width: 100%;
-      height: auto;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 5px;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    }
-</style>
 
 <title>Meme Genesis</title>
 <meta name="description" content="Meme Genesis is a website that provides a collection of the latest and most popular memes on the internet. Our website is updated daily with new memes, and we have a community section where users can submit their own memes. Join us to stay up-to-date with the funniest memes on the web!">
@@ -175,9 +165,11 @@
         %>
     <div class="d-flex flex-wrap">
       <% for (File file : files) { %>
-        <div class="p-2">
-          <div class="thumbnail">
-            <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" ><img src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>"></a>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
+            <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
+            </a>
           </div>
         </div>
       <% } %>
