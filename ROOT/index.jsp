@@ -228,7 +228,7 @@
         <%}%>
       <% } %>
       <HR>
-      < href="index.jsp?showall=true" >show all</a>
+      <a href="index.jsp?showall=true" >show all</a>
       <HR>
     </div>
 
