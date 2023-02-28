@@ -73,6 +73,7 @@
                 <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %>" >
                 <img class="card-img-top" src="img.jsp?filename=<%= review.getMeme_uuid() %>" alt="Rating <%= review.getRating() %>">
                 </a>
+                <BR><BR>
                 <h5 class="card-title">Rating <%= review.getRating() %></h5>
                 <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %>" class="btn btn-primary">Reviews</a>
               </div>
