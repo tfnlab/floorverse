@@ -163,7 +163,8 @@
             <option value="Whale Watching">Whale Watching</option>
             <option value="Rug Pull">Rug Pull</option>
             <option value="Hype Coin">Hype Coin</option>
-            <option value="Moonshot">Moonshot</option>            
+            <option value="Moonshot">Moonshot</option>
+            <option value="Bitcoin Ordinals">Bitcoin Ordinals</option>              
           </select>
           </div>
 
