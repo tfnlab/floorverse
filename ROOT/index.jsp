@@ -3,6 +3,7 @@
 <%@ page import="javax.servlet.*, javax.servlet.http.*" %>
 <%@ page import="com.tfnlab.api.con.APIConfig" %>
 <%@ page import="java.util.UUID" %>
+<%@ page import="java.util.Arrays" %>
 
 <html>
 <head>
@@ -74,6 +75,12 @@
         File[] files = dir.listFiles(new FilenameFilter() {
             public boolean accept(File dir, String name) {
                 return name.toLowerCase().endsWith(".png");
+            }
+        });
+
+        Arrays.sort(files, new Comparator<File>() {
+            public int compare(File f1, File f2) {
+                return Long.compare(f2.lastModified(), f1.lastModified());
             }
         });
         %>
