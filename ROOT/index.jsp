@@ -144,6 +144,26 @@
             <option value="the-most-interesting-man-in-the-world">The Most Interesting Man in the World</option>
             <option value="bad-joke-eel">Bad Joke Eel</option>
             <option value="change-my-mind">Change My Mind</option>
+            <option value="HODL">HODL</option>
+            <option value="To the Moon">To the Moon</option>
+            <option value="Lambo">Lambo</option>
+            <option value="Buy the Dip">Buy the Dip</option>
+            <option value="Diamond Hands">Diamond Hands</option>
+            <option value="FOMO">FOMO</option>
+            <option value="FUD">FUD</option>
+            <option value="Shiba Inu Coin">Shiba Inu Coin</option>
+            <option value="NFT">NFT</option>
+            <option value="Gas Fees">Gas Fees</option>
+            <option value="Smart Contracts">Smart Contracts</option>
+            <option value="DeFi">DeFi</option>
+            <option value="Crypto Winter">Crypto Winter</option>
+            <option value="Bitcoin Pizza">Bitcoin Pizza</option>
+            <option value="Crypto Kitties">Crypto Kitties</option>
+            <option value="Satoshi Nakamoto">Satoshi Nakamoto</option>
+            <option value="Whale Watching">Whale Watching</option>
+            <option value="Rug Pull">Rug Pull</option>
+            <option value="Hype Coin">Hype Coin</option>
+            <option value="Moonshot">Moonshot</option>            
           </select>
           </div>
 
