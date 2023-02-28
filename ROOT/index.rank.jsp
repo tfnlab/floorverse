@@ -66,7 +66,7 @@
       <% for (Review review : reviews) { %>
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
-              <a href="index.meme.jsp?meme_id=<<%= review.getMeme_uuid() %>" >
+              <a href="index.meme.jsp?meme_id=<%= review.getMeme_uuid() %>" >
               <img class="card-img-top" src="img.jsp?filename=<%= review.getMeme_uuid() %>" alt="Rating <%= review.getRating() %>">
               </a>
 
