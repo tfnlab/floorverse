@@ -116,6 +116,7 @@
     </div>
 
       <div class="container mt-5">
+    <%try{%>
         <% double averageRating = reviewDAO.getAverageRatingByMemeUUID(meme_id); %>
         <p>Average Rating: <%= averageRating %></p>
           <HR>
@@ -126,8 +127,11 @@
             <p>Rating: <%= review.getRating() %></p>
             <p>Comment: <%= review.getComment() %></p>
         </div>
-    <% } %>
-
+    <% }
+    } catch (Exception e) {
+      e.printStackTrace();
+      out.println("<p class='text-danger'>Error getting review.</p> ");
+    }%>
   </div>
 
   <!-- Google tag (gtag.js) -->
