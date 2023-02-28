@@ -47,6 +47,11 @@
 			$('.navbar-toggler').click(function(){
 				$('.navbar-collapse').toggleClass('show');
 			});
+
+			// Keep the menu open when an item is clicked
+			$('.navbar-nav>li>a').on('click', function(){
+				$('.navbar-collapse').collapse('hide');
+			});
 		});
 	</script>
 </body>
