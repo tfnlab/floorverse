@@ -149,10 +149,13 @@
               if (newimage.exists()) {
                 %>
                 <!--<small><%=ocrDescription%></small>-->
-                      <HR><a href="index.meme.jsp?meme_id=<%=uuid %>" >
-                <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
-                          </a>
-                          <HR>
+                      <HR>
+                      <div class="jumbotron">
+                      <a href="index.meme.jsp?meme_id=<%=uuid %>" >
+                      <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+                      </a>
+                      </div>
+                      <HR>                      
                 <%
               } else {
                 %>
@@ -163,7 +166,7 @@
              %><HR><%
            }
         %>
-        
+
     <div class="d-flex flex-wrap">
       <% for (File file : files) { %>
         <div class="col-md-6 col-lg-4 mb-4">
