@@ -8,7 +8,7 @@
 <%@ page import="java.sql.Timestamp" %>
 <%
 
-String meme_id = request.getParameter("meme_id"); 
+String meme_id = request.getParameter("meme_id");
 meme_id = meme_id.replace("/", "").replace(".", "");
 
 %>
@@ -139,6 +139,14 @@ meme_id = meme_id.replace("/", "").replace(".", "");
     }%>
   </div>
 
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://tfnlab.com/">TFNLab.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH16PDS3VF"></script>
   <script>

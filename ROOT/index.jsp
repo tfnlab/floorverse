@@ -165,7 +165,7 @@
             <option value="Hype Coin">Hype Coin</option>
             <option value="Moonshot">Moonshot</option>
             <option value="Bitcoin Ordinals">Bitcoin Ordinals</option>
-            <option value="Metaverse">Metaverse</option>              
+            <option value="Metaverse">Metaverse</option>
           </select>
           </div>
 
@@ -223,6 +223,16 @@
     </div>
 
   </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://tfnlab.com/">TFNLab.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH16PDS3VF"></script>
   <script>
