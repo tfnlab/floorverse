@@ -155,9 +155,8 @@
                           <div class="row">
                             <div class="col-md-6 offset-md-3 text-center">
                               <a href="index.meme.jsp?meme_id=<%=uuid %>" >
-                              <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>">
+                              <img src="img.jsp?filename=<%=uuid %>" alt="<%=uuid %>" class="img-fluid">
                               </a>
-                              <img src="your-image-source" alt="your-image-alt" class="img-fluid">
                               <h1><%=uuid %></h1>
                             </div>
                           </div>
