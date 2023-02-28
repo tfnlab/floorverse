@@ -78,7 +78,7 @@
       <%
       } catch (Exception e) {
         e.printStackTrace();
-        out.println("<p class='text-danger'>Error getting review.</p> ");
+        out.println("<p class='text-danger'>Error getting review.</p> " + e.getMessage());
       }%>
     </div>
 
