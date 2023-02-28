@@ -62,29 +62,29 @@
             <HR>
       <% List<Review> reviews = reviewDAO.getAverageReviewsByMemeUUID(); %>
 
+          <div class="d-flex flex-wrap">
       <% for (Review review : reviews) { %>
-          <div class="mt-2">
-              <p>UUID: <%= review.getMeme_uuid() %></p>
-              <p>Rating: <%= review.getRating() %></p>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <a href="index.meme.jsp?meme_id=<<%= review.getMeme_uuid() %>" >
+              <img class="card-img-top" src="img.jsp?filename=<%= review.getMeme_uuid() %>" alt="Rating <%= review.getRating() %>">
+              </a>
+
+
+            </div>
           </div>
-      <% }
+      <% } %>
+      </div>
+      <%
       } catch (Exception e) {
         e.printStackTrace();
         out.println("<p class='text-danger'>Error getting review.</p> ");
       }%>
     </div>
 
-    <div class="d-flex flex-wrap">
       <% for (File file : files) { %>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
-            <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
-            </a>
-          </div>
-        </div>
+
       <% } %>
-    </div>
 
   </div>
 
