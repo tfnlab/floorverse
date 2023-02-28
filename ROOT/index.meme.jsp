@@ -106,11 +106,9 @@ meme_id = meme_id.replace("/", "").replace(".", "");
       <label for="rating">Rating:</label>
       <select class="form-control" id="rating" name="rating" required>
         <option value="">-- Select Rating --</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
+        <%for(int j =1; j<421;j++){%>
+          <option value="<%=j%>"><%=j%></option>
+        <%}%>
       </select>
     </div>
     <div class="form-group">
