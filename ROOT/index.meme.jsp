@@ -32,6 +32,12 @@ meme_id = meme_id.replace("/", "").replace(".", "");
 <meta name="twitter:title" content="Meme Genesis">
 <meta name="twitter:description" content="MemeGenesis.com Meme ID <%=meme_id %>">
 <meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>&filetype=png">
+<meta property="og:title" content="Meme Genesis">
+<meta property="og:description" content="MemeGenesis.com Meme ID <%=meme_id %>">
+<meta property="og:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>&filetype=png">
+<meta property="og:url" content="https://www.linkedin.com/sharing/share-offsite/?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>">
+<meta property="og:type" content="website">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -71,8 +77,11 @@ meme_id = meme_id.replace("/", "").replace(".", "");
         <i class="fa fa-share"></i>
         </a>
         &nbsp;
-        <a href="https://www.linkedin.com/sharing/share-offsite/?text=hey%20@genesis_meme%20Check%20out%20this%20meme!%20%23MemeEngagement%20%23LaughOutLoud%20%23NFT%20%23MEMEGENESIS&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
-          <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="Share on LinkedIn" />
+        &nbsp;
+        &nbsp;
+        LinkedIn
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+           <i class="fa fa-share"></i>
         </a>
 
 
