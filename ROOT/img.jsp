@@ -17,7 +17,12 @@
     String filename = firstName + ".png";
     String filepath = conf.getPdfloc();
     String logofilepath  = filepath +  "../img/" + filename;
+    File file = new File(logofilepath);
     response.setContentType("image/jpeg");
+    if (file.exists()) {
+      response.setContentType("image/gif");
+      logofilepath += ".gif"
+    }
 //    response.setContentLength(new File(logofilepath).length());
     response.setHeader("Content-Length", String.valueOf(new File(logofilepath).length()));
 
