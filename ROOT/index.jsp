@@ -187,7 +187,7 @@
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
               File newimage = new File(dirPath + uuid + ".png");
-              
+
               if (newimage.exists()) {
                 %>
                 <!--<small><%=ocrDescription%></small>-->
@@ -209,7 +209,17 @@
                 <%
               } else {
                 %>
-                  There was an error trying to generate meme, please try again
+                Listen up, my friend. This is a delicate process we've got going on here. We've hit a few snags while trying to bring your artistic vision to life, but don't you worry. We didn't get to where we are today by throwing in the towel at the first sign of trouble. No sir, we're made of sterner stuff than that.
+                <BR>
+                <BR>
+
+                So, here's what you gotta do. Just <b>click</b> that <b>refresh</b> button like your life depends on it. Give it another shot, see if that fixes things up. And if it doesn't, well, then you gotta get a little creative. <b>Change the wording up a bit</b>, switch things around, see if that helps.
+                <BR>
+                <BR>
+
+                We're in this together, you and me. We're not gonna let a little setback stop us from achieving greatness. No way, no how. So let's saddle up and ride this thing out, come hell or high water. Yeehaw!
+                <BR>
+                <BR>
                 <%
               }
            }else{
