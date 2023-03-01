@@ -30,8 +30,8 @@ meme_id = meme_id.replace("/", "").replace(".", "");
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Meme Genesis">
-<meta name="twitter:description" content="Meme Genesis ID <%=meme_id %>">
-<meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>">
+<meta name="twitter:description" content="MemeGenesis.com Meme ID <%=meme_id %>">
+<meta name="twitter:image" content="https://memegenesis.com/img.jsp?filename=<%=meme_id %>&filetype=png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
