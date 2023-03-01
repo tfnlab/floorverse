@@ -229,7 +229,7 @@
 
     <div class="d-flex flex-wrap">
       <% int count = 0;%>
-      <% int countDown = files.length; %>
+      <% int countDown = files.length -1; %>
       <% for (File file : files) { %>
         <% count += 1; %>
         <%if(count<100 || request.getParameter("showall")!=null){%>
