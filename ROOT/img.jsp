@@ -14,6 +14,36 @@
 <%
     String firstName = request.getParameter("filename");
     String filetype = request.getParameter("filetype");
+    String fileno = request.getParameter("fileno");
+    int fileno = 0;
+    if (request.getParameter("fileno") != null && !request.getParameter("fileno").isEmpty()) {
+      fileno = Integer.parseInt(request.getParameter("fileno"));
+      APIConfig conf = new APIConfig();
+
+      // Get the directory path and list all PNG files
+      String dirPath = conf.getPdfloc() +  "../img/";
+      File dir = new File(dirPath);
+      File[] files = dir.listFiles(new FilenameFilter() {
+          public boolean accept(File dir, String name) {
+              return name.toLowerCase().endsWith(".png");
+          }
+      });
+
+      Arrays.sort(files, new Comparator<File>() {
+          public int compare(File f1, File f2) {
+              return Long.compare(f2.lastModified(), f1.lastModified());
+          }
+      });
+
+     int count = 0;
+      for (File file : files) {
+        if(count==fileno){
+            firstName = file.getName().replaceAll("\\.png$", "");
+        }
+        count += 1;
+      }
+    }
+
     APIConfig conf = new APIConfig();
     String filename = firstName + ".png";
     String download_filename = filename;
