@@ -16,6 +16,7 @@
     String filetype = request.getParameter("filetype");
     APIConfig conf = new APIConfig();
     String filename = firstName + ".png";
+    String download_filename = filename;
     String filepath = conf.getPdfloc();
     String logofilepath  = filepath +  "../img/" + filename;
     File file = new File(logofilepath + ".gif");
@@ -23,9 +24,12 @@
     if (file.exists() && filetype ==null) {
       response.setContentType("image/gif");
       logofilepath += ".gif";
+      download_filename += ".gif";
     }
 //    response.setContentLength(new File(logofilepath).length());
     response.setHeader("Content-Length", String.valueOf(new File(logofilepath).length()));
+    response.setHeader("Content-Disposition", "attachment;filename=\"" + download_filename + "\"");
+
 
     FileInputStream fis = new FileInputStream(logofilepath);
     byte[] buffer = new byte[1024];
