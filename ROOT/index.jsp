@@ -34,6 +34,9 @@
         <li class="nav-item">
           <a class="nav-link" href="index.rank.jsp">Ranking</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://app.manifold.xyz/c/jesuspepe">Jesus Pepe</a>
+        </li>
       </ul>
       <!--
       <form class="form-inline my-2 my-lg-0">
