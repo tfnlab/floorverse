@@ -235,11 +235,16 @@
         <%if(count<100 || request.getParameter("showall")!=null){%>
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
-            <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
-            <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
-            </a>
-            <%=countDown%><BR>
-            <% countDown -= 1; %>
+            <div class="card-body">
+              <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
+              <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
+              </a>
+              <h5 class="card-title">NFT #<%=countDown%></h5>
+              <HR>
+              <a href="https://opensea.io/assets/ethereum/0x06941cddc03f45ff77817b40f472770a9a730aec/<% countDown -= 1; %>" >
+              Opensea
+              </a>
+            </div>
           </div>
         </div>
         <%}%>
