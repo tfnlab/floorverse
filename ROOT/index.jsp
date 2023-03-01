@@ -229,6 +229,7 @@
 
     <div class="d-flex flex-wrap">
       <% int count = 0;%>
+      <% int countDown = files.length; %>
       <% for (File file : files) { %>
         <% count += 1; %>
         <%if(count<100 || request.getParameter("showall")!=null){%>
@@ -237,6 +238,8 @@
             <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
             <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
             </a>
+            <%=countDown%><BR>
+            <% countDown -= 1; %>
           </div>
         </div>
         <%}%>
