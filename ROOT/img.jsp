@@ -21,7 +21,7 @@
     response.setContentType("image/jpeg");
     if (file.exists()) {
       response.setContentType("image/gif");
-      logofilepath += ".gif"
+      logofilepath += ".gif";
     }
 //    response.setContentLength(new File(logofilepath).length());
     response.setHeader("Content-Length", String.valueOf(new File(logofilepath).length()));
