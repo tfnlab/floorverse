@@ -13,13 +13,14 @@
 <%@ page import="org.apache.commons.fileupload.FileItem" %>
 <%
     String firstName = request.getParameter("filename");
+    String filetype = request.getParameter("filetype");
     APIConfig conf = new APIConfig();
     String filename = firstName + ".png";
     String filepath = conf.getPdfloc();
     String logofilepath  = filepath +  "../img/" + filename;
     File file = new File(logofilepath + ".gif");
     response.setContentType("image/jpeg");
-    if (file.exists()) {
+    if (file.exists() && filetype ==null) {
       response.setContentType("image/gif");
       logofilepath += ".gif";
     }
