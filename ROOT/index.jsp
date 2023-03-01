@@ -187,6 +187,7 @@
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
               File newimage = new File(dirPath + uuid + ".png");
+              
               if (newimage.exists()) {
                 %>
                 <!--<small><%=ocrDescription%></small>-->
