@@ -14,7 +14,6 @@
 <%
     String firstName = request.getParameter("filename");
     String filetype = request.getParameter("filetype");
-    String fileno = request.getParameter("fileno");
     int fileno = 0;
     if (request.getParameter("fileno") != null && !request.getParameter("fileno").isEmpty()) {
       fileno = Integer.parseInt(request.getParameter("fileno"));
