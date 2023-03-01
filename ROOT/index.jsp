@@ -241,12 +241,13 @@
               </a>
               <h5 class="card-title">NFT #<%=countDown%></h5>
               <HR>
-              <a href="https://opensea.io/assets/ethereum/0x06941cddc03f45ff77817b40f472770a9a730aec/<% countDown -= 1; %>" >
+              <a href="https://opensea.io/assets/ethereum/0x06941cddc03f45ff77817b40f472770a9a730aec/<%=countDown %>" >
               Opensea
               </a>
             </div>
           </div>
         </div>
+        <% countDown -= 1; %>
         <%}%>
       <% } %>
       <HR>
