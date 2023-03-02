@@ -185,7 +185,6 @@
         </form>
         <HR>
           <a href="index.jsp?animationStop=true" >Animate</a>
-        <HR>
         <!--<small><%=ocrDescription%></small>-->
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
