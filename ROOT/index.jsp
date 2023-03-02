@@ -239,12 +239,12 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <%if(request.getParameter("animationStop")!=null){%>
               <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
-              <%}else{%>
-              <a href="index.meme.jsp?filetype=png&meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
-              <%}%>
+              <%if(request.getParameter("animationStop")!=null){%>
               <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
+              <%}else{%>
+              <img class="card-img-top" src="img.jsp?filetype=png&filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
+              <%}%>
               </a>
 
               <h5 class="card-title mt-3">NFT #<%=countDown%></h5>
