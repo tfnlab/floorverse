@@ -78,6 +78,12 @@ meme_id = meme_id.replace("/", "").replace(".", "");
         </a>
       </div>
     </div>
+    <div class="p-2">
+      <div class="thumbnail">
+        <img src="img.jsp?filetype=png&filename=<%=meme_id %>" alt="<%=meme_id %>">
+        
+      </div>
+    </div>
 </div>
 
   </div>
