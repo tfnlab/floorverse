@@ -183,7 +183,7 @@
           <HR>
           <button type="submit" class="btn btn-primary">Create Meme</button>
         </form>
-
+        <HR>
           <a href="index.jsp?animationStop=true" >Animate</a>
         <HR>
         <!--<small><%=ocrDescription%></small>-->
