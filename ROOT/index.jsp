@@ -183,6 +183,9 @@
           <HR>
           <button type="submit" class="btn btn-primary">Create Meme</button>
         </form>
+
+          <a href="index.jsp?animationStop=true" >Animate</a>
+        <HR>
         <!--<small><%=ocrDescription%></small>-->
         <%
            if (meme_text != null && meme_text.trim().length() > 0) {
@@ -236,7 +239,11 @@
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
+              <%if(request.getParameter("animationStop")!=null){%>
               <a href="index.meme.jsp?meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
+              <%}else{%>
+              <a href="index.meme.jsp?filetype=png&meme_id=<%=file.getName().replaceAll("\\.png$", "") %>" >
+              <%}%>
               <img class="card-img-top" src="img.jsp?filename=<%=file.getName().replaceAll("\\.png$", "") %>" alt="<%=file.getName() %>">
               </a>
 
