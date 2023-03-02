@@ -76,22 +76,6 @@ meme_id = meme_id.replace("/", "").replace(".", "");
           <a href="https://twitter.com/share?text=hey%20@genesis_meme%20Check%20out%20this%20meme!%20%23MemeEngagement%20%23LaughOutLoud%20%23NFT%20%23MEMEGENESIS&url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
         <i class="fa fa-share"></i>
         </a>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        LinkedIn
-
-        <a href="https://www.linkedin.com/shareArticle?url=https://news.burbanklive.com/pages/news/published/Celebrate_with_Us_at_Holiday_in_the_Park_.html">
-          Share on LinkedIn
-        </a>
-        <a href="https://www.linkedin.com/shareArticle?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
-          Share on LinkedIn
-        </a>
-        <a href="https://www.linkedin.com/shareArticle?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
-           <i class="fa fa-share"></i>
-        </a>
-
-
       </div>
     </div>
 </div>
