@@ -80,7 +80,7 @@ meme_id = meme_id.replace("/", "").replace(".", "");
         &nbsp;
         &nbsp;
         LinkedIn
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
+        <a href="https://www.linkedin.com/shareArticle?url=https://memegenesis.com/index.meme.jsp?meme_id=<%=meme_id %>" target="_blank">
            <i class="fa fa-share"></i>
         </a>
 
