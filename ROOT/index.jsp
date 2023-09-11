@@ -26,9 +26,6 @@
       <a class="navbar-brand" href="index.jsp">Meme Genesis</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="https://mint.memegenesis.com">Mint</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="https://opensea.io/collection/meme-genesis-1">OpenSea</a>
         </li>
         <li class="nav-item">
