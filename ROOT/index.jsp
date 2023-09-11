@@ -50,6 +50,40 @@
   <div class="container mt-5">
       <h4>The Art of Meme</h4>
       <p>CA : </a>
+      <p>Token Name : This is Fine</a>
+      <p>Ticker : FINE</p>
+      <header class="bg-primary text-white text-center py-5">
+          <h1>Welcome to the Original Meme Coin Creators!</h1>
+      </header>
+
+      <div class="container my-5">
+          <div class="row">
+              <div class="col-md-6">
+                  <h2>Our Journey</h2>
+                  <p>Our journey in the meme world started way back when memes were just a form of internet humor. Over the years, we've seen memes evolve from simple jokes to powerful cultural phenomena.</p>
+              </div>
+              <div class="col-md-6">
+                  <h2>The Birth of a New Idea</h2>
+                  <p>As we watched meme coins gain popularity, we realized that many of them lacked the authenticity and humor that true meme lovers crave. That's when the idea struck us – why not create a dedicated platform for meme coins, run by true meme enthusiasts?</p>
+              </div>
+          </div>
+
+          <div class="row mt-4">
+              <div class="col-md-6">
+                  <h2>Introducing Our Project</h2>
+                  <p>And so, the Original Meme Coin Creators Project was born. Our mission is simple: to produce valid meme coins and approve any meme coins that are coming out, ensuring that they meet the high standards of the meme community.</p>
+              </div>
+              <div class="col-md-6">
+                  <h2>What Sets Us Apart</h2>
+                  <ul>
+                      <li><strong>Meme Expertise:</strong> We're not just here to ride the meme coin wave; we're here to make it better.</li>
+                      <li><strong>Community-Driven:</strong> We believe in the power of the meme community.</li>
+                      <li><strong>Quality Assurance:</strong> We take quality seriously.</li>
+                      <li><strong>Transparency:</strong> Transparency is key in the world of meme coins.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>      
     <%
         // Create an instance of the APIConfig class
         String meme_text = request.getParameter("meme_text");
