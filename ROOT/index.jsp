@@ -52,7 +52,7 @@
       <p>CA : </a>
       <p>Token Name : This is Fine</a>
       <p>Ticker : FINE <img src="img/finelogosmall.png"> </p>
-      <header class="text-white text-center py-5" style="background-image: url('img/finelogo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; padding: 100px 0;">
+      <header class="text-white text-center py-5" style="background-image: url('img/finelogo.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; padding: 100px 0;">
         <h1>Welcome to the Original Meme Coin Creators!</h1>
       </header>
 
