@@ -51,9 +51,9 @@
       <h4>The Art of Meme</h4>
       <p>CA : </a>
       <p>Token Name : This is Fine</a>
-      <p>Ticker : FINE</p>
-      <header class="bg-primary text-white text-center py-5">
-          <h1>Welcome to the Original Meme Coin Creators!</h1>
+      <p>Ticker : FINE <img src="img/finelogosmall.png"> </p>
+      <header class="text-white text-center py-5" style="background-image: url('img/finelogo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; padding: 100px 0;">
+        <h1>Welcome to the Original Meme Coin Creators!</h1>
       </header>
 
       <div class="container my-5">
@@ -64,7 +64,7 @@
               </div>
               <div class="col-md-6">
                   <h2>The Birth of a New Idea</h2>
-                  <p>As we watched meme coins gain popularity, we realized that many of them lacked the authenticity and humor that true meme lovers crave. That's when the idea struck us – why not create a dedicated platform for meme coins, run by true meme enthusiasts?</p>
+                  <p>As we watched meme coins gain popularity, we realized that many of them lacked the authenticity and humor that true meme lovers crave. That's when the idea struck us, why not create a dedicated platform for meme coins, run by true meme enthusiasts?</p>
               </div>
           </div>
 
@@ -83,7 +83,7 @@
                   </ul>
               </div>
           </div>
-      </div>      
+      </div>
     <%
         // Create an instance of the APIConfig class
         String meme_text = request.getParameter("meme_text");
