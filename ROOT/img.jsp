@@ -23,7 +23,7 @@
       File dir = new File(dirPath);
       File[] files = dir.listFiles(new FilenameFilter() {
           public boolean accept(File dir, String name) {
-              return name.toLowerCase().endsWith(".png");
+              return name.toLowerCase().endsWith(".txt");
           }
       });
 
