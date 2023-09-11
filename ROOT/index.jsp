@@ -50,7 +50,7 @@
   <div class="container mt-5">
       <h4>The Art of Meme</h4>
       <p class="mt-3"><img src="img/finelogosmall.png"></p>
-      <p>CA : Coming soon</a>
+      <p>CA : 0x32EB8897F301F52203c1434CC3d3feEA028a269B</a>
       <p>Token Name : This is Fine</a>
       <p>Ticker : FINE  </p>
       <p>Dextools : Coming soon  </p>
