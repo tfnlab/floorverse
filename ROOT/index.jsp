@@ -49,9 +49,10 @@
 
   <div class="container mt-5">
       <h4>The Art of Meme</h4>
+      <p class="mt-3"><img src="img/finelogosmall.png"></p>
       <p>CA : </a>
       <p>Token Name : This is Fine</a>
-      <p>Ticker : FINE <img src="img/finelogosmall.png"> </p>
+      <p>Ticker : FINE  </p>
       <header class="text-white text-center py-5" style="background-image: url('img/finelogo.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; padding: 100px 0;">
         <h1>Welcome to the Original Meme Coin Creators!</h1>
       </header>
