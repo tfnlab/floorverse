@@ -53,7 +53,7 @@
       <p>CA : 0x32EB8897F301F52203c1434CC3d3feEA028a269B</a>
       <p>Token Name : This is Fine</a>
       <p>Ticker : FINE  </p>
-      <p>Dextools : https://www.dextools.io/app/en/ether/pair-explorer/0xe89ea412dfcdca38e67403f14bcdfa3932bc92ce  </p>
+      <p>Dextools : <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xe89ea412dfcdca38e67403f14bcdfa3932bc92ce">dextools</a>   </p>
       <p>UniSwap : Coming soon  </p>
       <header class="text-white text-center py-5" style="background-image: url('img/finelogo.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; padding: 100px 0;">
         <h1>Welcome to the Original Meme Coin Creators!</h1>
