@@ -37,6 +37,13 @@
         <li class="nav-item">
           <a class="nav-link" href="https://app.manifold.xyz/c/jesuspepe">Jesus Pepe</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/notifications">X</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://t.me/memegenesisclub">TG</a>
+        </li>
+
       </ul>
       <!--
       <form class="form-inline my-2 my-lg-0">
